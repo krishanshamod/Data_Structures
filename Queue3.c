@@ -53,7 +53,7 @@ void Insert(int item, queue *s){
 }
 
 void Remove(int *item, queue *s){
-   // node *temp;
+   
 
     if(IsQueueEmpty(s)){
         printf("Queue is empty.\n");
