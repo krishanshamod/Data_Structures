@@ -49,6 +49,10 @@ void Remove(queue *s, int *x){
 }
 
 void Insert(queue *s, int x){
+    if(s->front == -1){
+        s->front++;
+    } 
+    
     if(s->rear == MAXSIZE-1){
         printf("Queue is full.\n");
         exit(1);
