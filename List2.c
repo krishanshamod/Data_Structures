@@ -160,8 +160,13 @@ void DeleteList(int position, int *x, list *l){
         }
 
         *x = temp->next->data;
+
+        node *del = temp->next;
+
         temp->next = temp->next->next;
         l->count--;
+
+        free(del);
     }
 }
 
